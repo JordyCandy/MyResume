@@ -1,0 +1,226 @@
+body{
+    background-color: #f7f7f7;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+    margin: 0;
+    color: rgb(63, 63, 63);
+
+    transition: background-color 0.5s ease;
+}
+
+/*header*/
+.header{
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    height: auto;
+    text-align: center;
+}
+.d1{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    margin-top: 4%;
+    margin-bottom: -2%;
+    width: auto;
+    height: auto;
+    position: relative;
+    font-size: 1.2em;
+    letter-spacing: 0.2em;
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom, black, rgb(210, 107, 124)) 1;
+}
+
+.d2{
+    background-color: rgb(63, 63, 63);
+    text-align: center;
+    color: white;
+    height: 12%;
+}
+
+.resume{
+    margin-top: 4%;
+    font-size: 1.7em;
+}
+
+/*mid-section*/
+
+a{
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+.mid-section{
+    display: flex;
+    margin-top: 4%;
+}
+/*right-side*/
+.right-side{
+    padding: 2% 5% 5% 5%;
+    text-align: left;
+}
+
+li{
+    padding-bottom: 5%;
+    margin-left: -4%;
+}
+/*left-side*/
+.left-side{
+    border-right: 1px solid rgb(63, 63, 63);
+    padding: 2% 5% 5% 5%;
+    text-align: right;
+}
+
+.name{
+    font-size: 1.3em;
+}
+
+.date{
+    font-size: 0.8em;
+}
+
+.link{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/*media query to 450*/
+@media (max-width: 450px){
+    .container-all{
+        width: 70%;
+        margin: 0 auto;
+    }
+    body{
+        background-color: #151515;
+    }
+    /*header*/
+    .d1{
+        height: 8%;
+        font-size: 0.7em;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: -7%;
+        border-image: linear-gradient(to bottom, rgb(63, 63, 63), rgb(210, 107, 124)) 1;
+    }
+
+    .resume{
+        margin-top: 10%;
+        font-size: 1em;
+    }
+    
+    /*mid-section*/
+    .mid-section{
+        flex-direction: column;
+    }
+    .left-side{
+        border: none;
+    }
+    .left-side, .right-side{
+        padding: 3% 0 0 0;
+        text-align: center;
+    }
+    p, li, .name{
+        font-size: 1em;
+    }
+
+    .date{
+        font-size: 0.6em;
+    }
+    ul{
+        padding: 0;
+        list-style: none;
+    }
+    .title{
+        font-size: 1.4em;
+    }
+
+    .sub{
+        font-size: 1em;
+    }
+}
+
+/*media other*/
+@media only screen and (min-width: 450px) and (max-width: 768px) {
+    @media (max-width: 450px){
+        .container-all{
+            width: 70%;
+            margin: 0 auto;
+        }
+        body{
+            background-color: #151515;
+        }
+        /*header*/
+        .d1{
+            height: 8%;
+            font-size: 0.7em;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: -6%;
+            border-image: linear-gradient(to bottom, rgb(63, 63, 63), rgb(210, 107, 124)) 1;
+        }
+    
+        .resume{
+            margin-top: 10%;
+            font-size: 1em;
+        }
+        
+        /*mid-section*/
+        .mid-section{
+            flex-direction: column;
+        }
+        .left-side{
+            border: none;
+        }
+        .left-side, .right-side{
+            padding: 3% 0 0 0;
+            text-align: center;
+        }
+        p, li, .name{
+            font-size: 1em;
+        }
+    
+        .date{
+            font-size: 0.6em;
+        }
+        ul{
+            padding: 0;
+            list-style: none;
+        }
+        .title{
+            font-size: 1.4em;
+        }
+    
+        .sub{
+            font-size: 1em;
+        }
+    }
+}
+
+.dark{
+    background-color: #151515;
+    color: rgb(89, 89, 89);
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid rgb(63, 63, 63);
+    color: rgb(89, 89, 89);
+}
+
+.light{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(63, 63, 63);
+    border: 1px solid rgb(63, 63, 63);
+    color: rgb(89, 89, 89);
+}
+
+.color{
+    color: rgb(89, 89, 89);
+}
